@@ -7,6 +7,18 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\c3o.portfolio.finhub\c3o.portfolio.finhub.csproj" />
+    <ProjectReference Include="..\ThreeFourteen.Finnhub.Client\ThreeFourteen.Finnhub.Client.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Test\Index.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,18 @@
-﻿@{
+﻿@model List<ThreeFourteen.Finnhub.Client.Model.Dividend>
+
+@{
     ViewData["Title"] = "Home Page";
 }
+
+<div class="panel panel-default">
+    <div class="panel-heading">Div</div>
+    <div class="panel-body">
+        @foreach (var item in Model)
+        { 
+           <div>@item.Amount</div>
+        }
+    </div>
+</div>
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
     <ol class="carousel-indicators">
